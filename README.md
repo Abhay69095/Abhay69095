@@ -1,12 +1,9 @@
 - 👋 Hi, I’m @Abhay69095
 - 👀 I’m interested in coding
 - 🌱 I’m currently learning Information technology
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 💞️ I’m looking to collaborate on new Projects
+- 📫 You can reach me on Gmail
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: On this GitHub, you'll find a collection of my personal projects, contributions, and experiments. Feel free to explore, give feedback, or connect!
 
-<!---
-Abhay69095/Abhay69095 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
