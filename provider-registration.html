@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Registration - EventPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="home.html" class="back-arrow">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Home</span>
+    </a>
+
+    <div class="registration-container">
+        <div class="registration-header">
+            <h1>Service Provider Registration</h1>
+            <p>Join our platform and connect with event organizers</p>
+        </div>
+
+        <form class="registration-form" id="providerRegistrationForm">
+            <div class="form-section">
+                <h2>Basic Information</h2>
+                <div class="form-group">
+                    <label for="businessName">Business Name*</label>
+                    <input type="text" id="businessName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Business Email*</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Business Phone*</label>
+                    <input type="tel" id="phone" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Service Details</h2>
+                <div class="form-group">
+                    <label for="serviceType">Service Category*</label>
+                    <select id="serviceType" required>
+                        <option value="">Select a category</option>
+                        <option value="catering">Catering</option>
+                        <option value="decoration">Decoration</option>
+                        <option value="photography">Photography</option>
+                        <option value="venue">Venue</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Service Description*</label>
+                    <textarea id="description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Service Areas*</label>
+                    <div class="checkbox-group">
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceArea" value="weddings">
+                            <span class="checkbox-custom">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="service-label">
+                                <i class="fas fa-ring"></i>
+                                Weddings
+                            </span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceArea" value="corporate">
+                            <span class="checkbox-custom">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="service-label">
+                                <i class="fas fa-building"></i>
+                                Corporate Events
+                            </span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceArea" value="parties">
+                            <span class="checkbox-custom">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="service-label">
+                                <i class="fas fa-glass-cheers"></i>
+                                Private Parties
+                            </span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceArea" value="conferences">
+                            <span class="checkbox-custom">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="service-label">
+                                <i class="fas fa-users"></i>
+                                Conferences
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Portfolio</h2>
+                <div class="form-group">
+                    <label for="portfolio">Upload Portfolio Images</label>
+                    <div class="file-upload">
+                        <input type="file" id="portfolio" multiple accept="image/*">
+                        <label for="portfolio" class="file-upload-label">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Choose Files</span>
+                        </label>
+                    </div>
+                    <div id="imagePreview" class="image-preview"></div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label for="website">Website (if any)</label>
+                    <input type="url" id="website">
+                </div>
+                <div class="form-group">
+                    <label for="socialMedia">Social Media Links</label>
+                    <input type="text" id="socialMedia" placeholder="Instagram, Facebook, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience*</label>
+                    <input type="number" id="experience" required min="0">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Account Security</h2>
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password*</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+            </div>
+
+            <div class="form-section terms">
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="terms-text">
+                        I agree to the <a href="#" class="terms-link">Terms and Conditions</a> and 
+                        <a href="#" class="terms-link">Privacy Policy</a>
+                    </span>
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Register</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="provider-registration.js"></script>
+</body>
+</html> 

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Profile - EventPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="provider-profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">EventPro</div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="#events">Events</a>
+            </div>
+            <div class="nav-right">
+                <div class="profile-section">
+                    <div class="profile-trigger" id="profileTrigger">
+                        <img src="default-avatar.png" alt="Profile" class="profile-avatar" id="userAvatar">
+                        <span class="profile-name" id="userDisplayName">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="profile-page">
+        <div class="profile-header">
+            <div class="cover-photo">
+                <div class="edit-cover">
+                    <button class="edit-btn">
+                        <i class="fas fa-camera"></i>
+                        Change Cover
+                    </button>
+                </div>
+            </div>
+            
+            <div class="profile-info-wrapper">
+                <div class="profile-main-info">
+                    <div class="profile-photo">
+                        <img src="default-avatar.png" alt="Profile" id="providerAvatar">
+                        <button class="edit-avatar">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <div class="profile-details">
+                        <h1 id="businessName">Loading...</h1>
+                        <div class="provider-meta">
+                            <span class="provider-name" id="providerName">Loading...</span>
+                            <span class="service-type" id="serviceType">Loading...</span>
+                            <span class="experience">
+                                <i class="fas fa-star"></i>
+                                <span id="experienceYears">0</span> years experience
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="action-btn message-btn">
+                        <i class="fas fa-envelope"></i>
+                        Message
+                    </button>
+                    <button class="action-btn edit-btn">
+                        <i class="fas fa-edit"></i>
+                        Edit Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="content-sidebar">
+                <div class="sidebar-section contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-detail">
+                            <label>Email</label>
+                            <span id="emailDisplay">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-detail">
+                            <label>Phone</label>
+                            <span id="phoneDisplay">Loading...</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div class="contact-detail">
+                            <label>Website</label>
+                            <span id="websiteDisplay">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section social-links" id="socialLinks">
+                    <h3>Social Media</h3>
+                    <!-- Social links will be added here -->
+                </div>
+            </div>
+
+            <div class="content-main">
+                <div class="content-section about-section">
+                    <h2>About Us</h2>
+                    <p id="description">Loading description...</p>
+                </div>
+
+                <div class="content-section services-section">
+                    <h2>Service Areas</h2>
+                    <div class="service-tags" id="serviceAreas">
+                        <!-- Service areas will be populated here -->
+                    </div>
+                </div>
+
+                <div class="content-section portfolio-section">
+                    <div class="section-header">
+                        <h2>Portfolio</h2>
+                        <button class="add-photos-btn">
+                            <i class="fas fa-plus"></i>
+                            Add Photos
+                        </button>
+                    </div>
+                    <div class="portfolio-grid" id="portfolioGrid">
+                        <!-- Portfolio images will be added here -->
+                    </div>
+                </div>
+
+                <div class="content-section reviews-section">
+                    <div class="section-header">
+                        <h2>Reviews</h2>
+                        <div class="rating-summary">
+                            <div class="rating-average">4.8</div>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="review-count">(24 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="reviews-container" id="reviewsContainer">
+                        <p class="no-reviews">No reviews yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About EventPro</h3>
+                <p>Professional event management platform connecting organizers with top service providers.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#venues">Venues</a></li>
+                    <li><a href="#catering">Catering</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <li><a href="#decoration">Decoration</a></li>
+                    <li><a href="#entertainment">Entertainment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@eventpro.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 EventPro. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="provider-profile.js"></script>
+</body>
+</html> 
